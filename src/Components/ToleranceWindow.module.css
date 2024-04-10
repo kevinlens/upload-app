@@ -1,0 +1,21 @@
+.toleranceHeader{
+  margin-bottom: 0px;
+}
+
+.separator {
+  width: 1px;  
+  height: 20px;  
+  background-color: #b3b3b3;  
+  margin-right: 2px;
+}
+
+.toggleButton{
+  display: flex;
+  align-items: center;
+  height: 12px;
+  width: 8rem;
+  font-size: 13px;
+  padding-left: 0px;
+  margin-left: -5px;
+}
+

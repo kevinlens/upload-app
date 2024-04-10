@@ -1,0 +1,22 @@
+body{
+  background-color: #b3b3b3;
+  font-family: Geometria;
+}
+
+h1{
+  font-family: Geometria-Medium;
+}
+h3{
+  font-family: Geometria-Medium;
+  font-size: 12px;
+}
+
+@font-face {
+  font-family: Geometria;
+  src: url(./assets/Geometria.ttf);
+}
+
+@font-face {
+  font-family: Geometria-Medium;
+  src: url(./assets/Geometria-Medium.ttf);
+}
