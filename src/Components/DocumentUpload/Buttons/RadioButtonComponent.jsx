@@ -42,13 +42,14 @@ const RadioButtonComponent = ({
               value={choices[0]}
               onChange={(e) => setDecision(e.value)}
               checked={decision === choices[0]}
+              style={{ transform: 'scale(0.8)' }}
               pt={
                 decision === choices[0]
                   ? radioButtonSelected
                   : radioButtonStyling
               }
             />
-            <label htmlFor='ingredient1' className='ml-2'>
+            <label htmlFor='ingredient1' className='ml-1'>
               {choices[0]}
             </label>
           </div>
@@ -59,13 +60,14 @@ const RadioButtonComponent = ({
               value={choices[1]}
               onChange={(e) => setDecision(e.value)}
               checked={decision === choices[1]}
+              style={{ transform: 'scale(0.8)' }}
               pt={
                 decision === choices[1]
                   ? radioButtonSelected
                   : radioButtonStyling
               }
             />
-            <label htmlFor='ingredient2' className='ml-2'>
+            <label htmlFor='ingredient2' className='ml-1'>
               {choices[1]}
             </label>
           </div>

@@ -2,10 +2,10 @@
 import React, { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import styles from './UploadManifest.module.css';
-import Button from './Button';
-import fileImage from '../assets/file.png';
-import FileLoading from './FileLoading';
-import Separator from './Separator';
+import Button from '../Buttons/Button';
+import fileImage from '../../../assets/file.png';
+import FileLoading from '../FileLoading/FileLoading';
+import Separator from '../separator/Separator';
 
 const uploadButton = {
   backgroundColor: '#234066',
@@ -18,14 +18,16 @@ const uploadButton = {
 const UploadManifest = () => {
   const [manifest, setManifest] = useState({ name: '', size: '' });
 
-  const onDrop = useCallback((acceptedFiles) => {
-    setManifest(prevState => ({
-      ...prevState,
-      name: acceptedFiles[0].name,
-      size: acceptedFiles[0].size
-    }));
-    console.log('33', manifest);
-  }, [manifest]);
+  const onDrop = useCallback(
+    (acceptedFiles) => {
+      setManifest((prevState) => ({
+        ...prevState,
+        name: acceptedFiles[0].name,
+        size: acceptedFiles[0].size,
+      }));
+    },
+    [manifest]
+  );
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
   return (
     <div>
@@ -41,7 +43,7 @@ const UploadManifest = () => {
             ) : (
               <>
                 <img width='20' height='20' src={fileImage} />
-                <p style={{marginTop: '5px'}} >
+                <p style={{ marginTop: '5px' }}>
                   Drag & Drop Here Or <b>Browse</b>
                 </p>
               </>
@@ -56,7 +58,7 @@ const UploadManifest = () => {
         </div>
       </div>
       <Separator full={true} />
-      <FileLoading manifest={manifest}/>
+      <FileLoading manifest={manifest} />
       <Separator full={true} />
     </div>
   );

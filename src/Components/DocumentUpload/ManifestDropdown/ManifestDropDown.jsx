@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { Dropdown } from 'primereact/dropdown';
-import styles from './ManifestDropdown.module.css';
 const ManifestDropDown = () => {
   const [selectedCity, setSelectedCity] = useState(null);
   const cities = [{ name: 'Import Name', code: 'Doc' }];

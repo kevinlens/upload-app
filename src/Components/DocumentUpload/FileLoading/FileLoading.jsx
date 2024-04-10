@@ -1,5 +1,5 @@
 import React from 'react';
-import fileImage from '../assets/file.png';
+import fileImage from '../../../assets/file.png';
 import { Progress } from 'rsuite';
 const FileLoading = ({ manifest }) => {
   const fileSizeBytes = manifest.size; // bytes
@@ -12,7 +12,7 @@ const FileLoading = ({ manifest }) => {
           <p style={{color: '#c1c1c1'}} className='mt-0 mb-1'>
             {manifest.name ? manifest.name : 'WN-DAL-0726-NH20166.csv'}
           </p>
-          <p className='mt-0 mb-1'>{manifest.size ? fileSizeMB : '5.7' }MB</p>
+          <p className='mt-0 mb-1' style={{fontSize: '9.5px'}}>{manifest.size ? fileSizeMB : '5.7' }MB</p>
         </div>
         <Progress.Line
           style={{ padding: '0 0 0 0', width: 'full' }}

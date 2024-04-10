@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import Button from '../Buttons/Button';
 
 const cancelButton = {
   backgroundColor: 'white',
@@ -13,7 +13,7 @@ const cancelButton = {
 const Confirmation = () => {
   return (
     <div>
-      <h3 style={{fontSize: '13px'}}className='mb-3 mt-4'>
+      <h3 style={{ fontSize: '13px' }} className='mb-3 mt-4'>
         Data in the import file is correct. Please press Continue to import.
       </h3>
       <div className='flex justify-content-center gap-4'>

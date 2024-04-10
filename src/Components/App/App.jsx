@@ -1,6 +1,6 @@
-import Modal from './Modal';
+import Modal from '../DocumentUpload/Modal/Modal';
 import styles from './App.module.css';
-import DocumentUpload from './DocumentUpload';
+import DocumentUpload from '../DocumentUpload/DocumentUpload';
 
 function App() {
   return (

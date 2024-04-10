@@ -1,6 +1,6 @@
 import React from 'react';
-import RadioButtonComponent from './RadioButtonComponent';
-import TestingCenter from './TestingCenter';
+import TestingCenter from '../TestingCenter/TestingCenter';
+import RadioButtonComponent from '../Buttons/RadioButtonComponent';
 
 const Client = () => {
   return (
@@ -12,7 +12,7 @@ const Client = () => {
         <h3>Client:</h3>
       </RadioButtonComponent>
       {Array.from({ length: 4 }, (_, i) => (
-        <TestingCenter key={i} testingNumber={i+1} />
+        <TestingCenter key={i} testingNumber={i + 1} />
       ))}
     </div>
   );
